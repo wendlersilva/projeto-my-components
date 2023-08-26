@@ -39,6 +39,10 @@ article{
     padding-bottom: 1px;
 }
 
+.underline{
+    text-decoration: red wavy underline;
+}
+
 .main-header{
     flex: 0 0 26rem;
     background-color: var(--secondary-color);
