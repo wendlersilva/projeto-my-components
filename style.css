@@ -2,6 +2,7 @@
     --primary-color: #FF7833;
     --secondary-color: #31333B;
     --secondary-color-light:#444856;
+    --secondary-color-dark:#23252d;
     --default-gap: 3rem;
 }
 
@@ -149,6 +150,7 @@ a{
     flex: 1 0 0%;
 }
 
+
 .alternate {
     list-style-type: none;
     padding-left: 0;
@@ -168,4 +170,48 @@ a{
 
 .list-emoji {
     list-style-type: "\1F602";
+}
+
+input,
+label,
+textarea,
+select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+}
+
+input, 
+textarea, 
+select{
+    background-color: #ccc;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1.6rem ;
+    border: 0;
+}
+
+.btn{
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color-dark);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover, btn:focus{
+    background-color: var(--secondary-color-dark);
+}
+
+.form-quiz{
+    width: calc(50% - 1.5rem);
+}
+
+.btn-stroke{
+    background-color: transparent;
 }
